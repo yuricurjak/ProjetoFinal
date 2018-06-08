@@ -85,16 +85,21 @@ public class Main {
                 Setor s2 = new Setor("RH");
                 Setor s3 = new Setor("AUXILIAR ADM");
                 //Criando funcionarios administrativo
-                //PRECISA SETAR TODOS OS ATRIBUTOS
                 Administrativo adm1 = new Administrativo("Matheus");
                 Administrativo adm2 = new Administrativo("Felipe");
-		
+		//------------
+                adm1.setEndereço("Rua 1000");
+                adm1.setTelefone("7530003000");
+                adm1.setDataadm("25/10/2005");
+                adm1.setSalario(6000);
+                adm1.setSetor(s1);
+                adm2.setEndereço("Rua 2000");
+                adm2.setTelefone("7530303030");
+                adm2.setDataadm("10/11/2009");
+                adm2.setSalario(5000);
+                adm2.setSetor(s2);
+                //-------------------------------------------
                 
-                
-		
-		
-		
-		
 		
 		
 		
