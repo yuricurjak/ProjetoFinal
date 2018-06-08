@@ -7,7 +7,7 @@ public class Main {
 		
 		//INSTANCIANDO OBJETOS 
                 //criando escolas
-		Escola e1 = new Escola("T1");
+		Escola e1 = new Escola("TI");
 		Escola e2 = new Escola("Saude");
 		//Criando cursos	
 		Curso c1 = new Curso("SI");
@@ -100,13 +100,6 @@ public class Main {
                 adm2.setSetor(s2);
                 //-------------------------------------------
                 
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
