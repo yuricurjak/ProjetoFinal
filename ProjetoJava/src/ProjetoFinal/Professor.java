@@ -9,24 +9,25 @@ import java.util.ArrayList;
  */
 public class Professor extends Funcionario {
     
-    private Escola escola;
+    private ArrayList<Escola> escola;
     private ArrayList<Disciplina> disciplinas;
     
-    public Professor(String nome){
-    this.nome = nome;
-    this.disciplinas = new ArrayList<>();
+    public Professor(String nome, String dataadm, double salario, String endereco, String telefone){
+        super(nome, dataadm, salario, endereco, telefone);
+        this.disciplinas = new ArrayList<>();
+        this.escola = new ArrayList<>();
     }
     /**
      * @return the escola
      */
-    public Escola getEscola() {
+    public ArrayList<Escola> getEscola() {
         return escola;
     }
 
     /**
      * @param escola the escola to set
      */
-    public void setEscola(Escola escola) {
+    public void setEscola(ArrayList<Escola> escola) {
         this.escola = escola;
     }
 
@@ -47,5 +48,7 @@ public class Professor extends Funcionario {
 		
 		this.disciplinas.add( disciplina );
     }
+
+    
     
 }

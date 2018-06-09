@@ -5,6 +5,8 @@
  */
 package ProjetoFinal;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author aluno
@@ -12,8 +14,9 @@ package ProjetoFinal;
 public class Administrativo extends Funcionario {
     private Setor setor;
     
-    public Administrativo(String nome){
-        this.nome = nome;
+    public Administrativo(String nome, String dataadm, double salario, String endereco, String telefone, Setor setor){
+        super(nome, dataadm, salario, endereco, telefone); 
+        
     }
 
     /**

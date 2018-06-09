@@ -6,17 +6,23 @@ import java.util.ArrayList;
 public class Turma {
     
     private int id;
-    private ArrayList<Disciplina> disciplinas;
-    private ArrayList<Professor> professores;
+    //atributo unico
+    private Disciplina disciplina;
+     //atributo unico
+    private Professor professor;
+    
     private ArrayList<Aluno> alunos;
     private static int idcount;
     
     public Turma(){
     this.id = idcount++;
-    this.disciplinas =  new ArrayList<>();
-    this.professores =  new ArrayList<>();
     this.alunos =  new ArrayList<>();
     }
+
+    
+    public void addAluno( Aluno aluno ) {
+		this.alunos.add( aluno );
+	}
 
     /**
      * @return the id
@@ -26,38 +32,31 @@ public class Turma {
     }
 
     /**
-     * @param id the id to set
+     * @return the disciplina
      */
-    public void setId(int id) {
-        this.id = id;
+    public Disciplina getDisciplina() {
+        return disciplina;
     }
 
     /**
-     * @return the disciplinas
+     * @param disciplina the disciplina to set
      */
-    public ArrayList<Disciplina> getDisciplinas() {
-        return disciplinas;
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
     }
 
     /**
-     * @param disciplinas the disciplinas to set
+     * @return the professor
      */
-    public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
-        this.disciplinas = disciplinas;
+    public Professor getProfessor() {
+        return professor;
     }
 
     /**
-     * @return the professores
+     * @param professor the professor to set
      */
-    public ArrayList<Professor> getProfessores() {
-        return professores;
-    }
-
-    /**
-     * @param professores the professores to set
-     */
-    public void setProfessores(ArrayList<Professor> professores) {
-        this.professores = professores;
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     /**
@@ -72,33 +71,6 @@ public class Turma {
      */
     public void setAlunos(ArrayList<Aluno> alunos) {
         this.alunos = alunos;
-    }
-
-    /**
-     * @return the idcount
-     */
-    public static int getIdcount() {
-        return idcount;
-    }
-
-    /**
-     * @param aIdcount the idcount to set
-     */
-    public static void setIdcount(int aIdcount) {
-        idcount = aIdcount;
-    }
-    
-    public void addDisciplinas( Disciplina disciplina ) {
-		
-		this.disciplinas.add( disciplina );
-    }
-    public void addProfessores( Professor professor ) {
-		
-		this.professores.add( professor );
-    }
-    public void addAluno( Aluno aluno ) {
-		
-		this.alunos.add( aluno );
     }
     
     

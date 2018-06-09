@@ -10,10 +10,13 @@ package ProjetoFinal;
  * @author aluno
  */
 public class Pessoa {
-            String nome;
+    private String nome;
     private String endereço;
     private String telefone;
-
+    
+    public Pessoa(String nome, String endereço, String telefone){
+     /** atribuir os parametros **/
+    }
     /**
      * @return the nome
      */

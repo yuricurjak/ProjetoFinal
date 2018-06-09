@@ -12,14 +12,16 @@ import java.util.ArrayList;
  * @author aluno
  */
 public class Aluno extends Pessoa{
-    // colocar tipo curso
-    private Curso curso;
-    private ArrayList<Disciplina> disciplinas;
     
-    public Aluno(String nome){
-    this.nome = nome;
-    this.disciplinas = new ArrayList<>();
-    }
+    private Curso curso;
+    private Disciplina disciplinas;
+    
+    public Aluno(String nome, String endereco, String telefone) {
+        /** atribuir os parametros **/
+        
+        //chamando o construtor do pai (Pessoa)
+        super(nome, endereco, telefone);
+}
 
     /**
      * @return the curso
@@ -34,10 +36,18 @@ public class Aluno extends Pessoa{
     public void setCurso(Curso curso) {
         this.curso = curso;
     }
-    
-     public void addDisciplinas( Disciplina disciplina ) {
-		
-		this.disciplinas.add( disciplina );
+
+    /**
+     * @return the disciplinas
+     */
+    public Disciplina getDisciplinas() {
+        return disciplinas;
     }
-   
+
+    /**
+     * @param disciplinas the disciplinas to set
+     */
+    public void setDisciplinas(Disciplina disciplinas) {
+        this.disciplinas = disciplinas;
+    }
 }

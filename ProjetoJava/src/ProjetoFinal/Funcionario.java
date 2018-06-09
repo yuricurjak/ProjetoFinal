@@ -14,6 +14,14 @@ public class Funcionario extends Pessoa {
     private String dataadm;
     private double salario;
 
+    public Funcionario(String nome, String dataadm, double salario, String endereco, String telefone) {
+        /** atribuir os parametros **/
+        
+        //chamando o construtor do pai (Pessoa)
+        super(nome, endereco, telefone);
+    }
+    
+    
     /**
      * @return the dataadm
      */

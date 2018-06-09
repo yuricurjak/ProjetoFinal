@@ -13,7 +13,7 @@ public class Escola {
 		this.nome = nome;
 		this.id = idcount++;
 	}
-
+        
 	public int getId() {
 		return id;
 	}
