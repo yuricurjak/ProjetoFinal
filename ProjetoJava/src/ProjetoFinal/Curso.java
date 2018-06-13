@@ -9,11 +9,12 @@ public class Curso {
 	private String nome;
 	private Escola escola;
 	static int idcount;
-//Passar os metodos pelo construtor
 
-	public Curso(String nome) {
+
+	public Curso(String nome, Escola escola) {
             this.nome = nome;
             this.id = idcount++;
+            this.escola = escola;
 	}
 	
 	public Escola getEscola() {

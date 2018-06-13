@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ProjetoFinal;
 
 import java.util.ArrayList;
@@ -14,10 +10,14 @@ import java.util.ArrayList;
 public class BancoDados {
     
     private static ArrayList<Escola> escolas;
+    private static ArrayList<Curso> cursos;
+    private static ArrayList<Disciplina> disciplinas;
+    private static ArrayList<Turma> turmas;
+    private static ArrayList<Professor> professores; 
+    private static ArrayList<Administrativo> administrativos;
+    private static ArrayList<Setor> setores;
     private static ArrayList<Aluno> alunos;
-    private static ArrayList<Professor> professor; 
-    //atributos estaticos
-    //lista de Disciplina, Professo, Alunos...
+
     
     
     public static void addEscola( Escola escola ) {

@@ -15,7 +15,9 @@ public class Pessoa {
     private String telefone;
     
     public Pessoa(String nome, String endereço, String telefone){
-     /** atribuir os parametros **/
+        this.nome = nome;
+        this.endereço = endereço;
+        this.telefone = telefone;
     }
     /**
      * @return the nome

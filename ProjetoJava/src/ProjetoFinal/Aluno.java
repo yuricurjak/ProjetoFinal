@@ -16,11 +16,10 @@ public class Aluno extends Pessoa{
     private Curso curso;
     private Disciplina disciplinas;
     
-    public Aluno(String nome, String endereco, String telefone) {
-        /** atribuir os parametros **/
-        
-        //chamando o construtor do pai (Pessoa)
+    public Aluno(String nome, String endereco, String telefone, Curso curso, Disciplina disciplinas) {
         super(nome, endereco, telefone);
+        this.curso = curso;
+        this.disciplinas = disciplinas;
 }
 
     /**

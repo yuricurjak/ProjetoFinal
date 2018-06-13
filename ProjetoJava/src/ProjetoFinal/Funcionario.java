@@ -1,24 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ProjetoFinal;
 
-/**
- *
- * @author aluno
- */
+
 public class Funcionario extends Pessoa {
 
     private String dataadm;
     private double salario;
 
     public Funcionario(String nome, String dataadm, double salario, String endereco, String telefone) {
-        /** atribuir os parametros **/
-        
-        //chamando o construtor do pai (Pessoa)
         super(nome, endereco, telefone);
+        this.dataadm = dataadm;
+        this.salario = salario;
     }
     
     

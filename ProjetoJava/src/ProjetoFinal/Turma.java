@@ -14,9 +14,11 @@ public class Turma {
     private ArrayList<Aluno> alunos;
     private static int idcount;
     
-    public Turma(){
+    public Turma(Disciplina disciplina, Professor professor){
     this.id = idcount++;
     this.alunos =  new ArrayList<>();
+    this.disciplina = disciplina;
+    this.professor = professor;
     }
 
     
