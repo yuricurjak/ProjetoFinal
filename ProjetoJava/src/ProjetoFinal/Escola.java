@@ -5,7 +5,8 @@ package ProjetoFinal;
 public class Escola {
     private int id;
     private String nome;
-    static int idcount;
+    static int idcount = 1;
+    
 	
 	
 	

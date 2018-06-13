@@ -9,26 +9,26 @@ import java.util.ArrayList;
  */
 public class Professor extends Funcionario {
     
-    private ArrayList<Escola> escola;
+    private ArrayList<Escola> escolas;
     private ArrayList<Disciplina> disciplinas;
     
     public Professor(String nome, String dataadm, double salario, String endereco, String telefone){
         super(nome, dataadm, salario, endereco, telefone);
         this.disciplinas = new ArrayList<>();
-        this.escola = new ArrayList<>();
+        this.escolas = new ArrayList<>();
     }
     /**
      * @return the escola
      */
     public ArrayList<Escola> getEscola() {
-        return escola;
+        return escolas;
     }
 
     /**
      * @param escola the escola to set
      */
     public void setEscola(ArrayList<Escola> escola) {
-        this.escola = escola;
+        this.escolas = escola;
     }
 
     /**
@@ -44,11 +44,27 @@ public class Professor extends Funcionario {
     public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
     }
-    public void addDisciplinas( Disciplina disciplina ) {
-		
-		this.disciplinas.add( disciplina );
+    public void addEscolaLista( Escola escola ) {
+	escolas.add( escola );
     }
-
+    public void removeListaEscolaProfessor(Escola escola){
+        escolas.remove(escola);
+    }
+    public void showListaEscolaProfessor() {
+		for(int i=0; i < escolas.size(); i++)
+			System.out.println(escolas.get(i).getNome());         
+    }
+    
+    public void addListaDisciplinasProfessor( Disciplina disciplina ) {
+	disciplinas.add( disciplina );
+    }
+    public void removeListaDisciplinaCurso(Disciplina disciplina){
+        disciplinas.remove(disciplina);
+    }
+    public void showListaDisciplinaCurso() {
+		for(int i=0; i < disciplinas.size(); i++)
+			System.out.println(disciplinas.get(i).getNome());         
+    }
     
     
 }

@@ -74,7 +74,18 @@ public class Turma {
     public void setAlunos(ArrayList<Aluno> alunos) {
         this.alunos = alunos;
     }
+   //metodos de adicionar alunos  a lista da turma
     
+    public void addAlunoLista( Aluno aluno ) {
+	alunos.add( aluno );
+    }
+    public void removeAlunoLista(Aluno aluno){
+        alunos.remove(aluno);
+    }
+    public void showAlunoLista() {
+		for(int i=0; i < alunos.size(); i++)
+			System.out.println(alunos.get(i).getNome());         
+    } 
     
     
     
