@@ -1,6 +1,6 @@
 package ProjetoFinal;
 
-import java.util.ArrayList;
+
 
 
 public class Administrativo extends Funcionario {

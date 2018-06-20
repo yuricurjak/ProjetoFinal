@@ -44,24 +44,24 @@ public class Professor extends Funcionario {
     public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
     }
-    public void addEscolaLista( Escola escola ) {
+    public void addEscola( Escola escola ) {
 	escolas.add( escola );
     }
-    public void removeListaEscolaProfessor(Escola escola){
+    public void removeEscola(Escola escola){
         escolas.remove(escola);
     }
-    public void showListaEscolaProfessor() {
+    public void showEscolas() {
 		for(int i=0; i < escolas.size(); i++)
 			System.out.println(escolas.get(i).getNome());         
     }
     
-    public void addListaDisciplinasProfessor( Disciplina disciplina ) {
+    public void addDisciplina( Disciplina disciplina ) {
 	disciplinas.add( disciplina );
     }
-    public void removeListaDisciplinaCurso(Disciplina disciplina){
+    public void removeDisciplina(Disciplina disciplina){
         disciplinas.remove(disciplina);
     }
-    public void showListaDisciplinaCurso() {
+    public void showDisciplinas() {
 		for(int i=0; i < disciplinas.size(); i++)
 			System.out.println(disciplinas.get(i).getNome());         
     }

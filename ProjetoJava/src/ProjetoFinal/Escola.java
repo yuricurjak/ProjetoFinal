@@ -6,10 +6,7 @@ public class Escola {
     private int id;
     private String nome;
     static int idcount = 1;
-    
-	
-	
-	
+
 	public Escola(String nome) {
 		this.nome = nome;
 		this.id = idcount++;

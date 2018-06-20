@@ -1,7 +1,7 @@
 package ProjetoFinal;
 
 
-public class Funcionario extends Pessoa {
+abstract public class Funcionario extends Pessoa {
 
     private String dataadm;
     private double salario;

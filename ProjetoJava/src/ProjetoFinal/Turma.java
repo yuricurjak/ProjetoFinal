@@ -12,7 +12,7 @@ public class Turma {
     private Professor professor;
     
     private ArrayList<Aluno> alunos;
-    private static int idcount;
+    static int idcount = 1;
     
     public Turma(Disciplina disciplina, Professor professor){
     this.id = idcount++;
@@ -20,11 +20,6 @@ public class Turma {
     this.disciplina = disciplina;
     this.professor = professor;
     }
-
-    
-    public void addAluno( Aluno aluno ) {
-		this.alunos.add( aluno );
-	}
 
     /**
      * @return the id

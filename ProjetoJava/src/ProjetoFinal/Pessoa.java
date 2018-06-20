@@ -9,7 +9,7 @@ package ProjetoFinal;
  *
  * @author aluno
  */
-public class Pessoa {
+abstract public class Pessoa {
     private String nome;
     private String endereço;
     private String telefone;

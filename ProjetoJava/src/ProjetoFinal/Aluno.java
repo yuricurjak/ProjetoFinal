@@ -1,52 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ProjetoFinal;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author aluno
- */
 public class Aluno extends Pessoa{
     
     private Curso curso;
-    private Disciplina disciplinas;
+    private ArrayList <Disciplina> disciplinas; 
     
-    public Aluno(String nome, String endereco, String telefone, Curso curso, Disciplina disciplinas) {
+    public Aluno(String nome, String endereco, String telefone, Curso curso) {
         super(nome, endereco, telefone);
         this.curso = curso;
-        this.disciplinas = disciplinas;
+        this.disciplinas = new ArrayList<>();
 }
 
-    /**
-     * @return the curso
-     */
     public Curso getCurso() {
         return curso;
     }
 
-    /**
-     * @param curso the curso to set
-     */
     public void setCurso(Curso curso) {
         this.curso = curso;
     }
 
-    /**
-     * @return the disciplinas
-     */
-    public Disciplina getDisciplinas() {
+    public ArrayList <Disciplina> getDisciplinas() {
         return disciplinas;
     }
 
-    /**
-     * @param disciplinas the disciplinas to set
-     */
-    public void setDisciplinas(Disciplina disciplinas) {
+    public void setDisciplinas(ArrayList <Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
     }
+
+     public void addDisciplina( Disciplina disciplina ) {
+	disciplinas.add( disciplina );
+    }
+    public void removeDisciplina(Disciplina disciplina){
+        disciplinas.remove(disciplina);
+    }
+    public void showDisciplinas() {
+		for(int i=0; i < disciplinas.size(); i++)
+			System.out.println(disciplinas.get(i).getNome());         
+    }
+    
 }
